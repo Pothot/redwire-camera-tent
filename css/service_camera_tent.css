@@ -224,6 +224,7 @@ p, td, address{font-size:1.2rem;}
 
 .row-accordion img {
     max-width: 500px;
+    width: 100%;
 }
 
 .row-accordion .team-hover {
@@ -237,6 +238,7 @@ p, td, address{font-size:1.2rem;}
 
 .row-tent-studio img {
     width: 100%;
+    max-width: 960px;
 }
 
 
