@@ -1,0 +1,162 @@
+RewriteEngine On
+
+# ***********
+# Force HTTPS
+# ***********
+
+RewriteCond %{HTTPS} !on
+RewriteCond %{HTTP_HOST} ^redwire.at [OR]
+RewriteCond %{HTTP_HOST} ^www.redwire.at
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI}
+
+
+# *************
+# WWW Redirect
+# *************
+
+RewriteCond %{HTTP_HOST} ^redwire.at [NC]
+RewriteRule ^(.*)$ https://www.redwire.at/$1 [R=301]
+
+
+# ***********
+# URL Cleanup
+# ***********
+
+RewriteRule ^produktionen/wellentaeler/?$ produktionen/wellentaeler.html [NC,L]
+RewriteRule ^produktionen/?$ produktionen.html [NC,L]
+RewriteRule ^service_kamera/?$ service_kamera.html [NC,L]
+RewriteRule ^service_camera_tent/?$ service_camera_tent.html [NC,L]
+RewriteRule ^verleih/?$ verleih.html [NC,L]
+RewriteRule ^kontakt/?$ kontakt.html [NC,L]
+RewriteRule ^impressum/?$ impressum.html [NC,L]
+RewriteRule ^datenschutz/?$ datenschutz.html [NC,L]
+RewriteRule ^404/?$ 404page.html [NC,L]
+RewriteRule ^403/?$ 403page.html [NC,L]
+
+
+# ************************
+# 301 Permanent Redirect
+# ************************
+
+Redirect 301 /service /service_kamera
+Redirect 301 /rental /verleih
+Redirect 301 /produktionen/wellentaeler https://www.wellentaeler.at
+Redirect 301 /wellentaeler https://www.wellentaeler.at
+
+# *******************
+# 404 Page, 403 Page
+# *******************
+
+ErrorDocument 404 /404
+ErrorDocument 403 /403
+
+
+# ****************
+# Expires headers
+# ****************
+
+<IfModule mod_expires.c>
+
+    ExpiresActive on
+    ExpiresDefault                                      "access plus 2 days"
+
+  # CSS
+
+    ExpiresByType text/css                              "access plus 1 week"
+
+
+  # Data interchange
+
+    ExpiresByType application/atom+xml                  "access plus 1 hour"
+    ExpiresByType application/rdf+xml                   "access plus 1 hour"
+    ExpiresByType application/rss+xml                   "access plus 1 hour"
+
+    ExpiresByType application/json                      "access plus 0 seconds"
+    ExpiresByType application/ld+json                   "access plus 0 seconds"
+    ExpiresByType application/schema+json               "access plus 0 seconds"
+    ExpiresByType application/vnd.geo+json              "access plus 0 seconds"
+    ExpiresByType application/xml                       "access plus 0 seconds"
+    ExpiresByType text/calendar                         "access plus 0 seconds"
+    ExpiresByType text/xml                              "access plus 0 seconds"
+
+
+  # Favicon (cannot be renamed!) and cursor images
+
+    ExpiresByType image/vnd.microsoft.icon              "access plus 1 week"
+    ExpiresByType image/x-icon                          "access plus 1 week"
+
+  # HTML
+
+    ExpiresByType text/html                             "access plus 0 seconds"
+
+
+  # JavaScript
+
+    ExpiresByType application/javascript                "access plus 1 week"
+    ExpiresByType application/x-javascript              "access plus 1 week"
+    ExpiresByType text/javascript                       "access plus 1 week"
+
+
+  # Manifest files
+
+    ExpiresByType application/manifest+json             "access plus 1 week"
+    ExpiresByType application/x-web-app-manifest+json   "access plus 0 seconds"
+    ExpiresByType text/cache-manifest                   "access plus 0 seconds"
+
+
+  # Markdown
+
+    ExpiresByType text/markdown                         "access plus 0 seconds"
+
+
+  # Media files
+
+    ExpiresByType audio/ogg                             "access plus 1 week"
+    ExpiresByType image/bmp                             "access plus 1 week"
+    ExpiresByType image/gif                             "access plus 1 week"
+    ExpiresByType image/jpeg                            "access plus 1 week"
+    ExpiresByType image/png                             "access plus 1 week"
+    ExpiresByType image/svg+xml                         "access plus 1 week"
+    ExpiresByType image/webp                            "access plus 1 week"
+    ExpiresByType video/mp4                             "access plus 1 week"
+    ExpiresByType video/ogg                             "access plus 1 week"
+    ExpiresByType video/webm                            "access plus 1 week"
+
+
+  # WebAssembly
+
+    ExpiresByType application/wasm                      "access plus 1 week"
+
+
+  # Web fonts
+
+    # Collection
+    ExpiresByType font/collection                       "access plus 1 week"
+
+    # Embedded OpenType (EOT)
+    ExpiresByType application/vnd.ms-fontobject         "access plus 1 week"
+    ExpiresByType font/eot                              "access plus 1 week"
+
+    # OpenType
+    ExpiresByType font/opentype                         "access plus 1 week"
+    ExpiresByType font/otf                              "access plus 1 week"
+
+    # TrueType
+    ExpiresByType application/x-font-ttf                "access plus 1 week"
+    ExpiresByType font/ttf                              "access plus 1 week"
+
+    # Web Open Font Format (WOFF) 1.0
+    ExpiresByType application/font-woff                 "access plus 1 week"
+    ExpiresByType application/x-font-woff               "access plus 1 week"
+    ExpiresByType font/woff                             "access plus 1 week"
+
+    # Web Open Font Format (WOFF) 2.0
+    ExpiresByType application/font-woff2                "access plus 1 week"
+    ExpiresByType font/woff2                            "access plus 1 week"
+
+
+  # Other
+
+    ExpiresByType text/x-cross-domain-policy            "access plus 1 week"
+
+</IfModule>

@@ -1,0 +1,581 @@
+body {
+	font-family: 'Source Sans Pro', sans-serif, arial;
+	min-width: 320px;
+}
+
+*:focus {
+	outline-color: rgba(153, 26, 26, 1);
+}
+
+h1, h2, h3, h4, h5, h6 {
+	letter-spacing: 2px;
+	font-weight: bold;
+}
+
+p, td, th, address {
+	font-size: 1.2rem;
+}
+
+.seperatorRed {
+	width: 100%;
+	height: 2px;
+	background-color: #991a1a;
+}
+
+.cookie-request {
+	visibility: hidden;
+	position: fixed;
+	z-index: 100;
+	width: 100%;
+	text-align: center;
+	background-color: rgba(153, 26, 26, 0.9);
+	color: white;
+	padding-top: 6px;
+	padding-bottom: 6px;
+}
+
+.cookie-request .cookie-text {
+	vertical-align: middle;
+}
+
+@media print {
+	.cookie-request {
+		display: none;
+	}
+}
+
+.cookie-request button {
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+
+.custom-navbar{
+    background-color:#181818;
+    font-size:25px;
+    background-image:url('../img/background/sony-fs7-footer.jpg');
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position:17% 58%;
+}
+
+@media (max-width:991.98px)
+{
+    .container {
+        width: 100%;
+        max-width: 100%;
+    }
+    .custom-navbar{
+        background-size:974px auto
+    }
+}
+
+.custom-navbar .dropdown-toggle {
+    display: flex;
+    align-items: center;
+    width: auto;
+}
+
+.navbar-dark .navbar-nav .active>.nav-link {
+    color:rgba(255,255,255,.7);
+}
+
+.custom-navbar .dropdown-menu {
+    font-size: 22px;
+}
+
+
+.custom-navbar .icon-down-open::before {
+    font-size: 15px;
+    vertical-align: 20%;
+}
+
+.navbar-dark .navbar-nav .nav-item .dropdown-toggle {
+    border-width: 2px;
+    border-style: solid;
+    border-color: rgb(255, 255, 255, 0);
+    padding: 4px;
+}
+
+.custom-navbar .dropdown-menu .item-active {
+    border-bottom:2px solid #991a1a;
+}
+
+.custom-navbar .navbar-toggler
+{
+    border-color:rgba(255,255,255,.2);
+    padding:.6rem 1rem;
+}
+.custom-navbar .navbar-toggler:focus{outline-color:rgba(153, 26, 26, 1);}
+.custom-navbar .navbar-toggler .navbar-toggler-icon{background-size:120%;}
+
+@media (min-width:1350px){
+    .custom-navbar .container{
+        max-width:1300px;
+    }
+}
+
+.navbar-dark .navbar-nav .nav-link .link-text{color:rgba(255,255,255,.7);border:2px solid rgb(255, 255, 255, 0);}
+.navbar-dark .navbar-nav .link-text{padding:9px 7px 9px 7px;}
+
+.navbar-dark .navbar-nav .active .link-text, .navbar-dark .navbar-nav .active .dropdown-toggle
+{
+    border-bottom:2px solid #991a1a;
+}
+
+.navbar-dark .navbar-nav .nav-item .link-text:hover,
+.navbar-dark .navbar-nav .nav-item .dropdown-toggle:hover
+{
+    border:2px solid;
+    color:white;
+    border-radius:5px;
+}
+@media (max-width:991.98px)
+{
+    .custom-navbar {
+        background-image: none;
+        padding: 0;
+    }
+
+    .background-mobile {
+        width: 100%;
+        background-image:url('../img/background/sony-fs7-footer.jpg');
+        background-size:cover;
+        background-repeat:no-repeat;
+        background-position:17% 58%;    
+        padding: 8px 16px 8px 16px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+
+    .navbar-dark .navbar-nav .link-text
+    {
+        padding:4px 4px 4px 4px;
+        margin-top:1px;
+        margin-bottom:1px;
+    }
+    .navbar .navbar-nav {
+        padding-bottom:8px;
+    }
+
+    .navbar .navbar-collapse {
+        border-top: 2px solid black;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .navbar-dark .navbar-nav .dropdown-menu {
+        margin-top: 10px;
+    }
+}
+@media (max-width:767.98px){.navbar .navbar-brand img{height:100px;}
+}
+@media (max-width:575.98px){
+    .navbar .navbar-brand img{
+        height:80px;
+    }
+    .navbar .navbar-toggler{
+        padding:8px 14px 8px 14px;
+    }
+    .navbar .navbar-toggler .navbar-toggler-icon{
+        width:22px;height:22px;
+    }
+    .background-mobile {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+.headline-print {
+	display: none;
+}
+
+@media print {
+	.headline-print {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.headline-print img {
+		width: 260px;
+	}
+
+	.filmgeraeteverleih-heading {
+		display: none;
+	}
+}
+
+.custom-bg {
+	background: linear-gradient(to bottom, #ffffff 0%, #dddddd 75%, #777777);
+}
+
+.custom-verleih {
+	margin-top: 45px;
+	margin-bottom: 45px;
+	text-align: center;
+}
+
+.custom-verleih h1 {
+	margin-top: 5px;
+	margin-bottom: 21px;
+}
+
+.custom-verleih .how-to-rent {
+	font-size: 1.5rem;
+}
+
+.custom-verleih a {
+	color: #991a1a;
+}
+
+.custom-verleih table, .custom-verleih tr, .custom-verleih td, .custom-verleih th {
+	border: 1px solid black;
+}
+
+.custom-verleih td, .custom-verleih th {
+	padding: 0 4px;
+}
+
+.custom-verleih .table-small-screen {
+	display: none;
+}
+
+@media (max-width:575.98px) {
+	.custom-verleih h1 {
+		font-size: 1.8rem;
+		margin-bottom: 18px;
+	}
+
+	.custom-verleih .table-big-screen {
+		display: none;
+	}
+
+	.custom-verleih .table-small-screen {
+		display: initial;
+	}
+}
+
+.filter-logic button {
+	font-size: 1.4rem;
+	background-color: #991a1a;
+	border-color: #991a1a;
+	padding: 1px 10px 2px 10px;
+	border: 1px solid #ced4da;
+}
+
+.filter-logic button:hover {
+	background-color: #BB3737;
+}
+
+.filter-logic .icon-print {
+	font-size: 1.2rem;
+}
+
+.image-celeres {
+	background-image: url('../img/verleih-page/bg-celeres.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	min-height: 320px;
+}
+
+.image-fluid-head {
+	background-image: url('../img/verleih-page/bg-fluid-head.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	min-height: 320px;
+}
+
+@media (max-width:1199.98px) {
+	.custom-verleih {
+		margin-bottom: 0px;
+	}
+
+	.image-celeres {
+		display: none;
+	}
+
+	.image-fluid-head {
+		background-position: center bottom;
+	}
+}
+
+@media (max-width:767.98px) {
+	.custom-verleih {
+		margin-top: 25px;
+	}
+
+	.image-fluid-head {
+		min-height: 280px;
+	}
+}
+
+@media (max-width:575.98px) {
+	.custom-verleih {
+		margin-top: 20px;
+	}
+
+	.custom-verleih button {
+		margin-top: 28px;
+	}
+
+	.image-fluid-head {
+		min-height: 240px;
+	}
+}
+
+.filter-logic {
+	background-color: #CFCFCF;
+}
+
+@media print {
+	.filter-logic {
+		display: none;
+	}
+}
+
+.filter-logic h2 {
+	font-size: 1.6rem;
+}
+
+.filter-logic select {
+	background-color: #991A1A;
+	color: white;
+	font-size: 1.4rem;
+	padding: 0 10px 0 10px;
+}
+
+.filter-logic select:focus {
+	border-color: #991A1A;
+	outline: 0;
+	box-shadow: inset 0 1px 2px rgba(0,0,0,.075),0 0 5px rgba(255,0,0,.5);
+}
+
+#equipmentPictureModal {
+  cursor: pointer;
+}
+
+.equipment-picture {
+	max-width: 100%;
+	padding: 0;
+	cursor: pointer;
+}
+
+#equipment-picture-in-modal {
+	cursor: default;
+	max-width: 100%;
+	width: 100%;
+}
+
+/* IE Fix */
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+   #equipment-picture-in-modal {
+        max-height: 300px;
+   }
+}
+
+
+@media print {
+	.equipment-picture {
+		max-width: 70%;
+		margin-left: 20%;
+	}
+}
+
+.equipment-item {
+	margin: 20px 0 20px 0;
+	page-break-inside: avoid;
+}
+
+.equipment-item .picture-container {
+  width: 100%;
+}
+
+.equipment .color-red {
+	color: #991A1A;
+}
+
+.equipment-item .seperatorGrey {
+	width: 60%;
+	height: 2px;
+	background-color: #CFCFCF;
+	margin-bottom: 6px;
+}
+
+.equipment h2 {
+	font-size: 1.4rem;
+}
+
+@media (min-width: 576px) {
+	.equipment h2 {
+		font-size: 1.8rem;
+	}
+}
+
+.equipment ul {
+	list-style: none;
+	font-size: 1rem;
+	padding-left: 4px;
+	margin-bottom: 8px;
+}
+
+@media (min-width: 576px) {
+	.equipment ul {
+		font-size: 1.2rem;
+		padding-left: 40px;
+		margin-bottom: 16px;
+	}
+}
+
+.equipment ul li:before {
+	content: "-";
+	padding-right: 8px;
+}
+
+.equipment-item td {
+	font-size: 1rem;
+}
+
+@media (min-width: 576px) {
+	.equipment-item td {
+		font-size: 1.2rem;
+	}
+}
+
+@media (min-width: 992px) {
+	.equipment table .fix-width {
+		width: 150px;
+	}
+}
+
+.footer-background {
+	background-color: #181818;
+	background-image: url('../img/background/sony-fs7-footer.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 17% 93%;
+}
+
+@media (max-width:429px) {
+	.footer-background {
+		background-position: 13% 100%;
+		background-size: auto 685px;
+	}
+}
+
+.custom-footer {
+	color: white;
+	page-break-inside: avoid;
+}
+
+@media (min-width:1350px) {
+	.custom-footer {
+		max-width: 1300px;
+	}
+}
+
+.custom-footer h2 {
+	font-family: 'Open Sans Condensed', sans-serif, arial;
+	margin-top: 15px;
+	margin-bottom: 14px;
+}
+
+.custom-footer p, .custom-footer address {
+	margin-bottom: 5px;
+}
+
+.footer-for-print {
+	display: none;
+}
+
+@media print {
+	.custom-footer {
+		display: none;
+	}
+
+	.footer-for-print {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		margin-top: 140px;
+		page-break-inside: avoid;
+	}
+
+	.footer-for-print .footer-logo-print img {
+		width: 220px;
+	}
+}
+
+.custom-footer .follow-us p {
+	margin-bottom: 9px;
+	word-spacing: 4px;
+}
+
+.custom-footer .follow-us span {
+	margin-left: 6px;
+}
+
+.custom-footer .footer-logo img {
+	min-width: 270px;
+}
+
+@media (max-width:991.98px) {
+	.custom-footer .footer-logo img {
+		min-width: 200px;
+		width: 200px;
+	}
+}
+
+.custom-footer a {
+	color: white;
+}
+
+.custom-footer hr {
+	background-color: white;
+}
+
+.custom-contact a {
+	color: #BB3737;
+}
+
+noscript p {
+	color: #BB3737;
+	margin-bottom: 4px;
+}
+
+.copyright p {
+	font-size: 1rem;
+}
+
+.webdesign {
+	text-align: right;
+	min-width: 333px;
+}
+
+@media (max-width:991.98px) {
+	.webdesign {
+		min-width: 304px;
+	}
+}
+
+@media (max-width:767.98px) {
+	.webdesign {
+		text-align: center;
+		min-width: initial;
+	}
+}
+
+@media (max-width:575.98px) {
+	.custom-footer h2 {
+		font-size: 1.7rem;
+	}
+}
+
+.webdesign p {
+	font-size: 1rem;
+	margin-bottom: 0;
+}

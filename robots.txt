@@ -1,0 +1,6 @@
+# robots.txt zu https://www.redwire.at/
+
+User-Agent: *
+Allow: /
+
+Sitemap: https://www.redwire.at/sitemap.xml
