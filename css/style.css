@@ -161,7 +161,7 @@ p, td, address{font-size:1.2rem;}
 
 .custom-rw-logo-container{background:linear-gradient(to bottom, #ffffff 0%, #dddddd 75%, #777777);}
 .custom-rw-logo-container .row{justify-content:center;}
-.custom-rw-logo-container .image-scale{max-width:440px;margin:55px 12px 42px 12px;}
+.custom-rw-logo-container .image-scale{max-width:440px;margin:55px 12px 34px 12px;}
 .custom-rw-logo-container .image-scale img{width:100%;}
 @media (max-width:991.98px){.custom-rw-logo-container .image-scale{max-width:370px;margin-top:45px;margin-bottom:45px;}
 }
