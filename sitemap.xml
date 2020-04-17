@@ -9,42 +9,47 @@
 
 <url>
   <loc>https://www.redwire.at/</loc>
-  <lastmod>2018-11-06T10:27:13+00:00</lastmod>
+  <lastmod>2020-04-17T10:27:13+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://www.redwire.at/datenschutz</loc>
-  <lastmod>2018-11-06T10:27:13+00:00</lastmod>
+  <lastmod>2020-04-17T10:27:13+00:00</lastmod>
   <priority>0.40</priority>
 </url>
 <url>
   <loc>https://www.redwire.at/produktionen/</loc>
-  <lastmod>2018-11-25T10:27:13+00:00</lastmod>
+  <lastmod>2020-04-17T10:27:13+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.redwire.at/service</loc>
-  <lastmod>2018-11-06T10:27:13+00:00</lastmod>
+  <loc>https://www.redwire.at/service_kamera</loc>
+  <lastmod>2020-04-17T10:27:13+00:00</lastmod>
+  <priority>0.90</priority>
+</url>
+<url>
+  <loc>https://www.redwire.at/service_camera_tent</loc>
+  <lastmod>2020-04-17T10:27:13+00:00</lastmod>
   <priority>0.90</priority>
 </url>
 <url>
   <loc>https://www.redwire.at/verleih</loc>
-  <lastmod>2018-11-06T10:27:13+00:00</lastmod>
+  <lastmod>2020-04-17T10:27:13+00:00</lastmod>
   <priority>0.90</priority>
 </url>
 <url>
   <loc>https://www.redwire.at/kontakt</loc>
-  <lastmod>2018-11-06T10:27:13+00:00</lastmod>
+  <lastmod>2020-04-17T10:27:13+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.redwire.at/impressum</loc>
-  <lastmod>2018-11-06T10:27:13+00:00</lastmod>
+  <lastmod>2020-04-17T10:27:13+00:00</lastmod>
   <priority>0.40</priority>
 </url>
 <url>
   <loc>https://www.redwire.at/content/Redwire%20Rental%20Book.pdf</loc>
-  <lastmod>2018-11-06T10:27:13+00:00</lastmod>
+  <lastmod>2020-04-17T10:27:13+00:00</lastmod>
   <priority>0.70</priority>
 </url>
 

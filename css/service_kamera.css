@@ -167,7 +167,14 @@ p, td, address{font-size:1.2rem;}
 .service-description .pic-right{height:100%;width:80%;background-image:url('../img/service/Daniel-Dajakaj-Erster-Kameraassistent-transparent.png');background-repeat:no-repeat;background-size:contain;background-position:right center;}
 .service-description .service-description-paragraph{margin-top:90px;margin-bottom:65px;min-width:820px;}
 .service-description .service-description-paragraph h1{font-size:1.8rem;margin-bottom:6px;margin-left:4px;margin-right:4px;}
-.service-description .service-description-paragraph p{font-size:1.6rem;}
+
+.service-description .service-description-paragraph p{
+    font-size:1.6rem;
+}
+.service-description .service-description-paragraph .red-letters {
+    color:#991a1a;
+}
+
 .service-description button{font-size:1.8rem;background-color:#991a1a;border-color:#991a1a;}
 .service-description button:hover{background-color:#BB3737;}
 @media (max-width:1631px){.service-description .pic-left{background-size:cover;background-position:right center;}
