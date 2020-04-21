@@ -177,6 +177,24 @@ p, td, address{font-size:1.2rem;}
 .custom-kontakt h1{font-size:1.7rem;}
 .custom-kontakt h2{font-size:1.5rem;}
 }
+
+
+.captcha-rw-margin {
+    margin-bottom: 31rem;
+}
+@media (max-width:991.98px){.custom-kontakt .web-and-logo{margin-top:20px;}
+    .captcha-rw-margin {
+        margin-bottom: 0;
+    }
+}
+
+noscript img {
+    max-width: 100%;
+}
+
+
+
+
 .footer-background{background-color:#181818;background-image:url('../img/background/sony-fs7-footer.jpg');background-size:cover;background-repeat:no-repeat;background-position:17% 93%;}
 @media (max-width:429px){.footer-background{background-position:13% 100%;background-size:auto 685px;}
 }
